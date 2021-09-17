@@ -51,7 +51,7 @@ console.log('--- 3 ---');
 /*
   créer une fonction 'makePassword' qui en entrée prend un nombre 'size' et renvoie un mot de cette longueur
   construit avec des lettres au hasard.
-  Utiliser la fonction 'getNumber', 'getLetter' ainsi qu'une boucle if.
+  Utiliser la fonction 'getNumber', 'getLetter' ainsi qu'une boucle for.
 */
 
 console.log('--- bonus ---');
