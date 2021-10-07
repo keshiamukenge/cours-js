@@ -4,9 +4,7 @@
 
 console.log('--- PARTIE 1 ---');
 console.log('');
-console.log("--- Bienvenue sur l'autoroute A7 ---");
-console.log('--- 1 ---');
-// créer une variable x, et lui assigner un nombre
+console.log("> Bienvenue sur l'autoroute A7");
 
 const x = 34;
 
@@ -52,9 +50,9 @@ for (let i = 0; i < speeds.length; i++) {
 }
 
 console.log('');
-console.log('--- Merci de réinitialiser votre mot de passe ---');
-console.log('--- 1 ---');
-/*
+console.log('> Merci de réinitialiser votre mot de passe');
+
+/* [1]
   créer une fonction 'getNumber' qui en entrée prend un nombre et renvoie un nombre entier aléatoire
   entre 0 et ce nombre (ex: si on lui passe 4, on veut récupérer, 0, 1, 2 ou 3, au hasard).
   Logguer le résultat de la fonction random appliquée sur x.
@@ -75,9 +73,10 @@ console.log('Un nb aléatoire entre 0 et ', 19, '=>', getNumber(19));
 console.log('--- 2 ---');
 /*
 créer une fonction 'getLetter' qui renvoie une lettre au hasard parmi le tableau 'letters'.
+
 */
 
-const letters = ['abcdefghijklmnopqrstuvwxyz'];
+const letters = 'abcdefghijklmnopqrstuvwxyz';
 
 function getLetter() {
   const position = getNumber(letters[0].length);
@@ -110,6 +109,7 @@ console.log('Mon mdp:', makePassword(12));
 
 console.log('--- bonus ---');
 /*
+
   créer une fonction 'makeStrongerPassword' qui en entrée prend un nombre 'size' et un booléen 'withNumbers'
   et renvoie une chaine de caractères sur le même principe que précédemment, mais avec les contraintes suivantes:
   - Si 'withNumber' est vrai, faire en sorte qu'un caractère sur deux soit un nombre au hasard.
@@ -142,9 +142,9 @@ console.log('Mon meilleur mdp ', makeStrongerPassword(16, true));
 console.log('Mon meilleur mdp ', makeStrongerPassword(4, false));
 
 console.log('');
-console.log('--- Dis bonjour à mamie ---');
-console.log('--- 1 ---');
-/*
+console.log('> Dis bonjour à mamie');
+
+/* [1]
   créer une fonction 'bonjour' qui prend un 'name' en entrée
   et qui renvoie une chaine de caractère de type Bonjour personnalisé (ex: Bonjour Romain).
   Utiliser cette fonction avec votre prénom en logguant son résultat
