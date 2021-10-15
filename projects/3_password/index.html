@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
 
-    <meta description="Projet Autocomplete" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
 
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/latest/normalize.css"
-    />
-    <link rel="stylesheet" href="../../styles/reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+  <meta description="Projet Autocomplete" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script type="module" src="./index.js" defer></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <title>Autocomplete</title>
-  </head>
+  <script type="module" src="./index.js" defer></script>
 
-  <body>
+  <title>Autocomplete</title>
+</head>
 
-    <!-- Generer un mdp 
+<body>
+
+  <h1>Générateur de mot de passe</h1>
+
+  <div id="mdp"></div>
+  <form>
+    <div id="length">
+      <label for="charLength">Nombre de caractères</label>
+      <input type="number" name="charLength">
+    </div>
+
+    <div id="number">
+      <h2>Voulez-vous des chiffres ?</h2>
+      <div class="container-input">
+        <input type="checkbox" name="oui">
+        <label for="oui">oui</label>
+      </div>
+      <div class="container-input">
+        <input type="checkbox" name="non">
+        <label for="non">non</label>
+      </div>
+    </div>
+
+    <div id="char">
+      <h2>Voulez-vous des caractères spéciaux ?</h2>
+      <div class="container-input">
+        <input type="checkbox" name="oui">
+        <label for="oui">oui</label>
+      </div>
+      <div class="container-input">
+        <input type="checkbox" name="non">
+        <label for="non">non</label>
+      </div>
+    </div>
+
+    <div id="uppercase">
+      <h2>Voulez-vous des majuscules ?</h2>
+      <div class="container-input">
+        <input type="checkbox" name="oui">
+        <label for="oui">oui</label>
+      </div>
+      <div class="container-input">
+        <input type="checkbox" name="non">
+        <label for="non">non</label>
+      </div>
+    </div>
+
+    <button type="submit">Générer</button>
+
+  </form>
+
+  <!-- Generer un mdp 
     
       Pouvoir choisir le nombre de caractères avec soit un select, soit un champ texte pour remplir le nombre de caractère
       On peut choisir si il y a des caract§res spéciaux (mettre checkbox)
@@ -30,5 +77,6 @@
       
     -->
 
-  </body>
+</body>
+
 </html>
