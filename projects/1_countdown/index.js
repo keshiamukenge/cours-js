@@ -9,14 +9,16 @@ function convertMilis(timeLeft) {
     const calcHours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const calcMinutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const calcSeconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    const calcMillis = Math.floor(calcSeconds * 1000);
 
     document.querySelector('#days').innerText = calcDays;
     document.querySelector('#hours').innerText = calcHours;
     document.querySelector('#minutes').innerText = calcMinutes;
     document.querySelector('#seconds').innerText = calcSeconds;
+    document.querySelector('#millis').innerText = calcMillis;
 }
 
-const endDate = new Date(2021, 9, 29).getTime();
+const endDate = new Date(2021, 12, 29).getTime();
 
 function displayMsg() {
     if(getTimeLeft(endDate) >= 0){
