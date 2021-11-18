@@ -20,63 +20,56 @@
 
   <h1>Générateur de mot de passe</h1>
 
-  <div id="mdp"></div>
+  <div id="mdp">
+    <span></span>
+  </div>
   <form>
     <div id="length">
       <label for="charLength">Nombre de caractères</label>
-      <input type="number" name="charLength">
+      <input id="character-nb" type="number" name="charLength">
     </div>
 
     <div id="number">
       <h2>Voulez-vous des chiffres ?</h2>
       <div class="container-input">
-        <input type="checkbox" name="oui">
-        <label for="oui">oui</label>
+        <input id="number-yes" type="checkbox" name="numberOui">
+        <label for="numberOui">oui</label>
       </div>
       <div class="container-input">
-        <input type="checkbox" name="non">
-        <label for="non">non</label>
+        <input id="number-no" type="checkbox" name="numberNon">
+        <label for="numberNon">non</label>
       </div>
     </div>
 
     <div id="char">
       <h2>Voulez-vous des caractères spéciaux ?</h2>
       <div class="container-input">
-        <input type="checkbox" name="oui">
-        <label for="oui">oui</label>
+        <input type="checkbox" name="speOui">
+        <label for="speOui">oui</label>
       </div>
       <div class="container-input">
-        <input type="checkbox" name="non">
-        <label for="non">non</label>
+        <input type="checkbox" name="speNon">
+        <label for="speNon">non</label>
       </div>
     </div>
 
     <div id="uppercase">
       <h2>Voulez-vous des majuscules ?</h2>
       <div class="container-input">
-        <input type="checkbox" name="oui">
-        <label for="oui">oui</label>
+        <input type="checkbox" name="majOui">
+        <label for="majoui">oui</label>
       </div>
       <div class="container-input">
-        <input type="checkbox" name="non">
-        <label for="non">non</label>
+        <input type="checkbox" name="majNon">
+        <label for="majNon">non</label>
       </div>
     </div>
 
-    <button type="submit">Générer</button>
+    <button type="submit" onclick="onClick()">Générer</button>
 
   </form>
 
-  <!-- Generer un mdp 
-    
-      Pouvoir choisir le nombre de caractères avec soit un select, soit un champ texte pour remplir le nombre de caractère
-      On peut choisir si il y a des caract§res spéciaux (mettre checkbox)
-      Est ce qu'on veut chiffre et lettre ou juste lettre (mettre checkbox)
-      Majuscule oui ou non (mettre checkbox)
-      bouton générer pour générer le mdp
-      
-    -->
-
+    <script src="index.js"></script>
 </body>
 
 </html>

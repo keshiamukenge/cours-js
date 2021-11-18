@@ -1,0 +1,44 @@
+html, body{
+    font-family: arial;
+    text-align: center;
+}
+
+h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+#mdp{
+    background-color: peachpuff;
+    color: black;
+    width: fit-content;
+    height: 40px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 300px;
+    margin: auto;
+}
+
+div{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: fit-content;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
