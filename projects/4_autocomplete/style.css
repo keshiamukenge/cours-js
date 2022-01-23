@@ -1,0 +1,127 @@
+#container-todo{
+    width: 900px;
+    height: fit-content;
+    padding: 50px;
+    background-color: #a8dadc;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#container-input {
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: #1d3557;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+}
+
+.ri-add-fill{
+    color: #1d3557;
+}
+
+#container-input button{
+    width: 60px;
+    height: 100%;
+    margin: 0 20px;
+    background-color: #ffe8d6;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#container-input button:hover {
+    background-color: #1d3557;
+    transition: 150ms linear;
+    cursor: pointer;
+}
+
+#container-input button:active {
+    background-color: #3b6fb9;
+}
+
+#container-input button:hover .ri-add-fill {
+    color: white;
+    transition: 150ms linear;
+}
+
+ul {
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    padding: 20px 30px;
+}
+
+li {
+    font-family: "Montserrat";
+    margin: 15px 0;
+    background-color: #1d3557;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    width: 95px;
+    text-align: center;
+    height: 40px;
+    margin: 0 20px;
+    background-color: #ffe8d6;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+li button:hover {
+    color: white;
+    background: #ef233c;
+    transition: 150ms linear;
+    cursor: pointer;
+}
+
+.btn-edit {
+    width: 50px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.btn-edit:hover {
+    background-color: #ffe8d6;
+    transition: 150ms linear;
+    cursor: pointer;
+}
+
+.btn-edit:hover .ri-edit-line {
+    color: #1d3557;
+    transition: 150ms linear;
+}
+
+.ri-edit-line {
+    color: #ffe8d6;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
