@@ -11,6 +11,7 @@
       href="https://necolas.github.io/normalize.css/latest/normalize.css"
     />
     <link rel="stylesheet" href="../../styles/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 
     <script type="module" src="./index.js" defer></script>
@@ -18,5 +19,22 @@
     <title>Password</title>
   </head>
 
-  <body></body>
+  
+  <div id="container-todo">
+      <h1>TODO</h1>
+      <form>
+      <div id="container-input">
+          <input id="input-search" list="data" aria-expanded="true" value="" placeholder="Rechercher une adresse" aria-autocomplete="list" autocomplete="off"/>
+          <datalist id="data"></datalist>
+        <button type="submit" class="button-add">
+          <i class="ri-add-fill"></i>
+        </button>
+      </div>
+    </form>
+
+      <ul id="container-list">
+
+      </ul>
+    </div>
+  </body>
 </html>
